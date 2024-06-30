@@ -1,5 +1,6 @@
 # NLTK-FastAPI
-REST APU that can tokenize text, part-of-speech and ...
+REST API that can perform text tokenization, part-of-speech tagging, and named entity recognition.
+
 ### 1. Create a virtual environment.
 
 `python3 -m venv env2`
@@ -13,6 +14,16 @@ REST APU that can tokenize text, part-of-speech and ...
 ### 3. Run the application
 
 `uvicorn three_endpoints:app --reload`
+
+Endpoints:
+
+All endpoints take as a parameter JSON with text field.
+
+*/tokenize* - tokenize the given text, returns an array of tokens;
+
+*/pos_tag* - part-of-speech tagging, returns a JSON with pairs (token, tag);
+
+*/ner* - Named Entity Recognition - returns a JSON with array of entities and their types.
 
  ### 4. Test the application
  
