@@ -9,7 +9,7 @@ REST API that can perform text tokenization, part-of-speech tagging, and named e
 
 ### 2. Install required packages
 
-'pip install nltk fastapi uvicorn'
+`pip install nltk fastapi uvicorn`
 
 ### 3. Run the application
 
